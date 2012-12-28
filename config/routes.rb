@@ -1,4 +1,8 @@
 Callbreak::Application.routes.draw do
+  get "callbreak/index"
+
+  get "callbreak/reset"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
