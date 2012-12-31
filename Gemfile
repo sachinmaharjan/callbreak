@@ -2,14 +2,16 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.9'
 gem 'prototype-rails'
-gem 'sass-rails',   '~> 3.2.5'
-gem 'bootstrap-sass', '2.1'
+gem 'sass-rails', '~> 3.2'
+gem 'coffee-rails', '~> 3.2.2'
+gem 'uglifier', '>= 1.2.4'
+gem 'bootstrap-sass', '~> 2.2.2.0'
 
 group :assets do
-      gem 'sass-rails',   '~> 3.2.5'
-      gem 'coffee-rails', '~> 3.2.2'
-      gem 'uglifier', '>= 1.2.4'
-      gem 'bootstrap-sass', '2.1'
+    gem 'sass-rails', '~> 3.2'
+    gem 'coffee-rails', '~> 3.2.2'
+    gem 'uglifier', '>= 1.2.4'
+	gem 'bootstrap-sass', '~> 2.2.2.0'
 end
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -37,6 +39,10 @@ gem 'bj'
 gem 'nokogiri'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'aws-s3', :require => 'aws/s3'
+
+group :production do
+  gem 'pg', '0.12.2'
+end
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators

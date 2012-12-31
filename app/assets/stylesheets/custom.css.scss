@@ -101,3 +101,56 @@ footer ul li {
   float: left;
   margin-left: 10px;
 }
+
+
+
+/* Cards */
+.top{
+  height: 165px;
+  text-align: center;
+}
+.left{
+  width: 63px;
+display: inline-block;
+height: 300px;
+text-align: left;
+}
+.right
+{
+  width: 63px;
+display: inline-block;
+height: 300px;
+text-align: right;
+}
+
+.bottom{
+  height: 165px;
+  text-align: center;
+}
+.allcards{
+  height: 165px;
+}
+.cards li {
+  list-style: none;
+  display: inline-block;
+  &.first{
+    z-index: 0;
+  }
+  &.card{
+    position: absolute;
+    
+    img{
+    border-left: 1px solid #000;
+      -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    border-radius: 15px;
+    }
+    a {
+      &:hover{
+        z-index: 100;
+        border: 5px;
+      }
+    }
+  }
+}
