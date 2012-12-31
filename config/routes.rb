@@ -1,4 +1,12 @@
 Callbreak::Application.routes.draw do
+  get "users/new"
+
+  root :to => "callbreak#index"
+
+  resources :users
+
+  match '/signup',  :to => 'users#new'
+
   get "callbreak/index"
 
   get "callbreak/reset"

@@ -34,6 +34,7 @@ GEM
       builder
       mime-types
       xml-simple
+    bcrypt-ruby (3.0.1)
     bj (1.0.1)
       main (>= 2.6.0)
       orderedhash (>= 0.0.3)
@@ -146,6 +147,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-s3
+  bcrypt-ruby (= 3.0.1)
   bj
   bootstrap-sass (~> 2.2.2.0)
   coffee-rails (~> 3.2.2)
