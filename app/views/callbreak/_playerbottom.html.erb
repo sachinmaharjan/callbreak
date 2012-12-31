@@ -1,0 +1,13 @@
+<h3><%= name %></h3>
+<ul class="cards">
+	<!-- <li class="first"></li> -->
+	<%= i = 0 %>
+	<%= margin = 20 %>
+  <% player.each do |card| %>
+   <%= i = i + 1 %>
+   <%= margin = margin + 20 %>
+    <li class="card" style="z-index: <%= i %>; margin-left = <%= margin %>px;">
+      <%= link_to image_tag("cards/" + card.suit + "-" + card.number + ".png" , :class => 'card'),  :action => 'index', :controller => 'callbreak'%><br>
+    </li>
+  <% end %>
+</ul>

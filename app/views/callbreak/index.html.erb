@@ -1,2 +1,18 @@
-<h1>Callbreak#index</h1>
-<p>Find me in app/views/callbreak/index.html.erb</p>
+<p></p>
+<div class="top">
+<%= render :partial => 'playertop', :locals => {:player => @player1, :name => "Player 1"} %>
+</div>
+
+<div class="middle">
+	<div class="left">
+	<%= render :partial => 'playerleft', :locals => {:player => @player2, :name => "Player 2"} %>
+	</div>
+
+	<div class="right">
+	<%= render :partial => 'playerright', :locals => {:player => @player3, :name => "Player 3"} %>
+	</div>
+</div>
+
+<div class="bottom">
+<%= render :partial => 'playerbottom', :locals => {:player => @player4, :name => "Player 4"} %>
+</div>
